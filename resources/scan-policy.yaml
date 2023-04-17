@@ -8,7 +8,7 @@
 apiVersion: scanning.apps.tanzu.vmware.com/v1beta1
 kind: ScanPolicy
 metadata:
-  name: scan-policy
+  name: dekt-scan-policy
   labels:
     'app.kubernetes.io/part-of': 'scan-system'
 spec:
