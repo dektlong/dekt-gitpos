@@ -8,7 +8,7 @@
 #@   cb_values = {}
 #@   cb_values["namespace"] = data.values.name
 #@   cb_values["targetImagePullSecret"] = "registries-credentials"
-#@   cb_values["carbonBlack"] = {"configSecret": {"name": "carbonblack-config-secret}}
+#@   cb_values["carbonBlack"] = {"configSecret": {"name": "carbonblack-config-secret"}}
 #@   cb_values["metadataStore"] = {"url": "https://metadata-store.sys.dekt.io", "caSecret": {"name": "store-ca-cert","importFromNamespace": ""},"authSecret": {"name": "store-auth-token","importFromNamespace": ""}}
 #@   return cb_values
 #@ end
