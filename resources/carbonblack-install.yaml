@@ -35,7 +35,7 @@ spec:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: "cb-scanner"
+  name: "carbonblack-scanner"
   namespace: tap-install
   annotations:
     kapp.k14s.io/create-strategy: fallback-on-update
