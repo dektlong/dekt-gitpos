@@ -9,7 +9,7 @@
 #@   cb_values["namespace"] = data.values.name
 #@   cb_values["targetImagePullSecret"] = "registries-credentials"
 #@   cb_values["carbonBlack"] = {"configSecret": {"name": "cb-config"}}
-#@   cb_values["metadataStore"] = {"url": "https://metadata-store.sks.view.cloudfocused.in", "caSecret": {"name": "store-ca-cert","importFromNamespace": ""},"authSecret": {"name": "store-auth-token","importFromNamespace": ""}}
+#@   cb_values["metadataStore"] = {"url": "https://metadata-store.sys.dekt.io", "caSecret": {"name": "store-ca-cert","importFromNamespace": ""},"authSecret": {"name": "store-auth-token","importFromNamespace": ""}}
 #@   return cb_values
 #@ end
 #@ if in_list('supply_chain', ['testing_scanning']) and in_list('profile', ['full', 'build']):
