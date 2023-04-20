@@ -17,7 +17,7 @@
 apiVersion: packaging.carvel.dev/v1alpha1
 kind: PackageInstall
 metadata:
-  name: "carbonblack"
+  name: "carbonblack-scanner"
   namespace: tap-install
   annotations:
     kapp.k14s.io/create-strategy: fallback-on-update
