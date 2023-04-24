@@ -5,7 +5,7 @@
 #@overlay/match by=overlay.subset({"apiVersion": "v1", "kind": "ServiceAccount","metadata":{"name":"default"}}), expects="0+"
 ---
 secrets:
-  - name: gitops-creds
+  - name: git-https
   - name: registries-credentials
 imagePullSecrets:
   - name: registries-credentials
