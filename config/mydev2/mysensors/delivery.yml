@@ -17,14 +17,12 @@ spec:
   template:
     metadata:
       annotations:
-        apps.tanzu.vmware.com/debug: "true"
         apps.tanzu.vmware.com/live-update: "true"
         autoscaling.knative.dev/maxScale: "1"
         autoscaling.knative.dev/minScale: "1"
         boot.spring.io/version: 2.7.3
         conventions.carto.run/applied-conventions: |-
           appliveview-sample/app-live-view-appflavour-check
-          developer-conventions/debug-convention
           developer-conventions/live-update-convention
           developer-conventions/add-source-image-label
           spring-boot-convention/auto-configure-actuators-check
@@ -61,10 +59,6 @@ spec:
     spec:
       containers:
       - env:
-        - name: BPL_DEBUG_ENABLED
-          value: "true"
-        - name: BPL_DEBUG_PORT
-          value: "9005"
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
         image: dektregistry.azurecr.io/dekt-system/workloads/mysensors-mydev2@sha256:2d0c4645dbe2758220762d3f0bb1f92f306686ffedb0c96219b14f8d71e25bed
