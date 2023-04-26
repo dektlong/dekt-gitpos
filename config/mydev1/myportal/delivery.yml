@@ -30,7 +30,7 @@ spec:
         carto.run/workload-name: myportal
     spec:
       containers:
-      - image: dektregistry.azurecr.io/dekt-system/workloads/myportal-mydev1@sha256:019741d5533257680ccb4547818088ebb651d6d338fe18a8aaea6b0e0ba908ca
+      - image: dektregistry.azurecr.io/dekt-system/workloads/myportal-mydev1@sha256:b37bc98d8a431dd1aaeeff7dfdb86ee1b74b17b1741ad3468dec62966056707a
         name: workload
         resources: {}
         securityContext:
