@@ -38,7 +38,7 @@ spec:
           spring-boot-convention/app-live-view-appflavours-boot
           spring-boot-convention/service-intent-mysql
           spring-boot-convention/service-intent-postgres
-        developer.apps.tanzu.vmware.com/image-source-digest: dektregistry.azurecr.io/mysensors:latest@sha256:1c12040bd91e1c5939aeac1415bd127acb4226adc0a993b6594777594675ff33
+        developer.apps.tanzu.vmware.com/image-source-digest: dektregistry.azurecr.io/mysensors:latest@sha256:6c12b13a61e8b1b5a23c6bc5a7a7870096e5fcda66b54a4558447d855e2f2fb0
         developer.conventions/target-containers: workload
         services.conventions.carto.run/mysql: mysql-connector-java/8.0.30
         services.conventions.carto.run/postgres: postgresql/42.2.14
@@ -67,7 +67,7 @@ spec:
           value: "9005"
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: dektregistry.azurecr.io/dekt-system/workloads/mysensors-mydev2@sha256:1dd144426411bc1cc93036238f8de5aac09fb27caa9c6c8a4dd33db569acac4b
+        image: dektregistry.azurecr.io/dekt-system/workloads/mysensors-mydev2@sha256:2d0c4645dbe2758220762d3f0bb1f92f306686ffedb0c96219b14f8d71e25bed
         livenessProbe:
           httpGet:
             path: /livez
