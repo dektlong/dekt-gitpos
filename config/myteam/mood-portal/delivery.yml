@@ -33,7 +33,7 @@ spec:
       - env:
         - name: SNIFF_THRESHOLD
           value: "50"
-        image: dektregistry.azurecr.io/dekt-system/workloads/mood-portal-myteam@sha256:159ad5100dc7e734bab06473fe340663b61746098ffe5438779bb10d649ab983
+        image: dektregistry.azurecr.io/dekt-system/workloads/mood-portal-myteam@sha256:75189c4fb31a514ca07325ebdb27d5b819528ebcac8842e36b863a2aee4c4086
         name: workload
         resources: {}
         securityContext:
