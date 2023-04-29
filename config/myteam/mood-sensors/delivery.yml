@@ -55,7 +55,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: dektregistry.azurecr.io/dekt-system/workloads/mood-sensors-myteam@sha256:821d8946ef7c691ab7b6dbd98a23ea2d48f58951d833861e7b62091c5dfa260d
+        image: dektregistry.azurecr.io/dekt-system/workloads/mood-sensors-myteam@sha256:17ba6de63b2e606a8ec1e988ead59855643ace47dc9fa4d0d99209bc19c57aeb
         livenessProbe:
           httpGet:
             path: /livez
