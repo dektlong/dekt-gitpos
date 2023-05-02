@@ -17,10 +17,12 @@ spec:
   template:
     metadata:
       annotations:
+        apps.tanzu.vmware.com/live-update: "true"
         autoscaling.knative.dev/minScale: "1"
         boot.spring.io/version: 2.7.3
         conventions.carto.run/applied-conventions: |-
           appliveview-sample/app-live-view-appflavour-check
+          developer-conventions/add-source-image-label
           spring-boot-convention/auto-configure-actuators-check
           spring-boot-convention/spring-boot
           spring-boot-convention/spring-boot-graceful-shutdown
@@ -31,12 +33,13 @@ spec:
           spring-boot-convention/app-live-view-connector-boot
           spring-boot-convention/app-live-view-appflavours-boot
           spring-boot-convention/service-intent-postgres
+        developer.apps.tanzu.vmware.com/image-source-digest: main/b70264e67f60261e1d2c80a87dc8caa22fc2d372
         developer.conventions/target-containers: workload
         services.conventions.carto.run/postgres: postgresql/42.2.14
       labels:
         apis.apps.tanzu.vmware.com/register-api: "true"
         app.kubernetes.io/component: run
-        app.kubernetes.io/part-of: mood-sensors
+        app.kubernetes.io/part-of: mysensors
         apps.tanzu.vmware.com/auto-configure-actuators: "false"
         apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: web
